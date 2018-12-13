@@ -3,13 +3,13 @@ using namespace std;
  
 int main (){
 	int k;
-	double a , px = 0;
+	double a , px = 0 ;
 
 	cout << "a=";
 	cin >> a ;
 	cout << "k=";
 	cin >> k ;
-	double x0 = 0, xi;
+	double x0 = a, xi;
 	for(int i=1;1<=k;i++){
 		xi = (((k-1)*x0)/k) + (a/(pow(xi,k-1)));
 		px += xi;//sum
